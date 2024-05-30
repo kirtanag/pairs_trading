@@ -9,15 +9,15 @@ To determine whether there is a correlation between social media sentiment and s
 
 ### INTRODUCTION-
 #### Companies selected-
-| Serial No. | Company Name | NYSE Ticker | Industry |
-|---|---|---|---|
-| 1 | Microsoft Corp | MSFT | Information Technology |
-| 2 | Apple Inc. | AAPL | Information Technology |
-| 3 | Nvidia Corp | NVDA | Information Technology |
-| 4 | Amazon.com Inc | AMZN | Consumer Discretionary |
-| 5 | Alphabet Inc A | GOOGL | Communication Services |
-| 6 | Meta Platforms, Inc. Class A | META | Communication Services |
-| 7 | Alphabet Inc C | GOOG | Communication Services |
-| 8 | Berkshire Hathaway B | BRK.B | Financials |
-| 9 | Eli Lilly & Co | LLY | Health Care |
-| 10 | Broadcom Inc | AVGO | Information Technology |
+| Serial No. | Company Name | Ticker | Industry | Stock Exchange |
+|---|---|---|---|---|
+| 1 | Microsoft Corp | MSFT | Information Technology | NASDAQ |
+| 2 | Apple Inc. | AAPL | Information Technology | NASDAQ |
+| 3 | Nvidia Corp | NVDA | Information Technology | NASDAQ |
+| 4 | Amazon.com Inc | AMZN | Consumer Discretionary | NASDAQ |
+| 5 | Alphabet Inc A | GOOGL | Communication Services | NASDAQ |
+| 6 | Meta Platforms, Inc. Class A | META | Communication Services | NASDAQ |
+| 7 | Alphabet Inc C | GOOG | Communication Services | NASDAQ |
+| 8 | Berkshire Hathaway B | BRK.B | Financials | NYSE |
+| 9 | Eli Lilly & Co | LLY | Health Care | NYSE |
+| 10 | Broadcom Inc | AVGO | Information Technology | NASDAQ |
