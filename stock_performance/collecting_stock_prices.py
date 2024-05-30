@@ -5,7 +5,7 @@ import datetime
 import pandas as pd
 
 
-# Collect the metadata of all 10 companies and arrange them in a dataclass
+# Define the dataclass
 @dataclass
 class MetaData:
     ID : str
@@ -58,6 +58,7 @@ for ticker in tickers:
         company_data.append(meta_data)
 
 
+# Convert to CSV
 pd.DataFrame(company_data).to_csv('/stock_performance/stock_data/CompanyDataFull.csv')
 
 
