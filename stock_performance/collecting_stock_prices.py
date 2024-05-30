@@ -23,16 +23,41 @@ class MetaData:
 
 
 # Define the ticker symbols and desired time period
-df_tickers = pd.read_excel('https://github.com/kirtanag/reddit_sentiment_analysis_trading_bot/blob/main/CompaniesMetaData.xlsx')
-tickers = list(df_tickers['Tickers'])
-period = "1mo"  # Past 1 month
+df_tickers = pd.read_csv('/stock_performance/stock_data/CompaniesMetaData.csv')
+tickers = list(df_tickers['Ticker'])
+period = "3mo"  # Past 3 month
 
 # Download historical data
 data_collected = []
+company_data = []
 for ticker in tickers:
     data = yf.download(ticker, period=period)
-    data_collected.append(data)
+    company_name = df_tickers[df_tickers['Ticker'] == ticker]["Company"].tolist()[0]
+    industry = df_tickers[df_tickers['Ticker'] == ticker]["Industry"].tolist()[0]
+    stock_exchange = df_tickers[df_tickers['Ticker'] == ticker]["Stock Exchange"].tolist()[0]
 
-print(data_collected)
+    # Iterate through each day in the downloaded data
+    for index, row in data.iterrows():
+        # Create a MetaData object for each day's data
+        meta_data = MetaData(
+            ID=ticker + str(index.date()),
+            CompanyName=company_name,
+            Ticker=ticker,
+            Industry=industry,
+            StockExchange=stock_exchange,
+            Date=index.date(),
+            Open=row["Open"],
+            High=row["High"],
+            Low=row["Low"],
+            Close=row["Close"],
+            AdjClose=row["Adj Close"],
+            Volume=row["Volume"],
+        )
+
+        # Append the object to the list
+        company_data.append(meta_data)
+
+
+pd.DataFrame(company_data).to_csv('/stock_performance/stock_data/CompanyDataFull.csv')
 
 
