@@ -23,7 +23,7 @@ class MetaData:
 
 
 # Define the ticker symbols and desired time period
-df_tickers = pd.read_excel('/Users/kirtanagopakumar/PycharmProjects/reddit_sentiment_analysis_trading_bot/CompaniesMetaData.xlsx')
+df_tickers = pd.read_excel('https://github.com/kirtanag/reddit_sentiment_analysis_trading_bot/blob/main/CompaniesMetaData.xlsx')
 tickers = list(df_tickers['Tickers'])
 period = "1mo"  # Past 1 month
 
