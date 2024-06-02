@@ -17,7 +17,20 @@ To determine whether there is a correlation between social media sentiment and s
 | 4 | Amazon.com Inc | AMZN | Consumer Discretionary | NASDAQ |
 | 5 | Alphabet Inc A | GOOGL | Communication Services | NASDAQ |
 | 6 | Meta Platforms, Inc. Class A | META | Communication Services | NASDAQ |
-| 7 | Alphabet Inc C | GOOG | Communication Services | NASDAQ |
-| 8 | Berkshire Hathaway B | BRK.B | Financials | NYSE |
-| 9 | Eli Lilly & Co | LLY | Health Care | NYSE |
-| 10 | Broadcom Inc | AVGO | Information Technology | NASDAQ |
+| 7 | Tesla | TSLA | Consumer Discretionary | NASDAQ |
+| 8 | Walmart | WMT | Consumer Defensive | NYSE |
+| 9 | Netflix | NFLX | Communication Services | NASDAQ |
+| 10 | Walt Disney | DIS | Consumer Discretionary | NYSE |
+
+
+#### Data collected- 
+1. Reddit - Reddit posts from the past 1 month were collected based using the PRAW package and Reddit API.
+2. Stock performance - Yahoo Finance's yfinance package was used to collect the stock performance for the past 1 month
+
+
+### Data sentiment- 
+Transformers were used to then compute general sentiment of the collected reddit posts.
+
+
+#### Data normalisation-
+Reddit being a generally negative platform, it was unsurprising that the sentiment computed was largely negative. Thus, the sentiment score was used to normalise the negative value and put them on an analysable 'scale'.
