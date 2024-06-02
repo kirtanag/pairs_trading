@@ -28,7 +28,7 @@ To determine whether there is a correlation between social media sentiment and s
 2. Stock performance - Yahoo Finance's yfinance package was used to collect the stock performance for the past 1 month
 
 
-### Data sentiment- 
+#### Data sentiment- 
 Transformers were used to then compute general sentiment of the collected reddit posts.
 
 
