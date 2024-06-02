@@ -1,11 +1,11 @@
-﻿Serial No,Company,Ticker,Industry,Stock Exchange
-1,Microsoft Corp,MSFT,Information Technology,NASDAQ
-2,Apple Inc.,AAPL,Information Technology,NASDAQ
-3,Nvidia Corp,NVDA,Information Technology,NASDAQ
-4,Amazon.com Inc,AMZN,Consumer Discretionary,NASDAQ
-5,Alphabet Inc A,GOOGL,Communication Services,NASDAQ
-6,"Meta Platforms, Inc. Class A",META,Communication Services,NASDAQ
-7,Alphabet Inc C,GOOG,Communication Services,NASDAQ
-8,Berkshire Hathaway B,BRK-B,Financials,NYSE
-9,Eli Lilly & Co,LLY,Health Care,NYSE
-10,Broadcom Inc,AVGO,Information Technology,NASDAQ
+﻿Serial No,Company,Ticker,Industry,Stock Exchange,Subreddit
+1,Microsoft Corp,MSFT,Information Technology,NASDAQ,Microsoft
+2,Apple Inc.,AAPL,Information Technology,NASDAQ,Apple
+3,Nvidia Corp,NVDA,Information Technology,NASDAQ,Nvidia
+4,Amazon.com Inc,AMZN,Consumer Discretionary,NASDAQ,Amazon
+5,Alphabet Inc A,GOOGL,Communication Services,NASDAQ,Google
+6,"Meta Platforms, Inc. Class A",META,Communication Services,NASDAQ,Facebook
+7,Tesla,TSLA,Consumer Discretionary,NASDAQ,teslamotors
+8,Walmart,WMT,Consumer Defensive,NYSE,Walmart
+9,Netflix,NFLX,Communication Services,NASDAQ,Netflix
+10,Walt Disney Co,DIS,Consumer Discretionary,NYSE,Disney

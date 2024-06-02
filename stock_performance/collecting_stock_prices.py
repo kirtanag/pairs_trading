@@ -23,7 +23,7 @@ class MetaData:
 
 
 # Define the ticker symbols and desired time period
-df_tickers = pd.read_csv('/stock_performance/stock_data/CompaniesMetaData.csv')
+df_tickers = pd.read_csv('/Users/kirtanagopakumar/PycharmProjects/reddit_sentiment_analysis_trading_bot/stock_performance/stock_data/CompaniesMetaData.csv')
 tickers = list(df_tickers['Ticker'])
 period = "3mo"  # Past 3 month
 
@@ -59,6 +59,6 @@ for ticker in tickers:
 
 
 # Convert to CSV
-pd.DataFrame(company_data).to_csv('/stock_performance/stock_data/CompanyDataFull.csv')
+pd.DataFrame(company_data).to_csv('/Users/kirtanagopakumar/PycharmProjects/reddit_sentiment_analysis_trading_bot/stock_performance/stock_data/CompanyDataFull.csv')
 
 
